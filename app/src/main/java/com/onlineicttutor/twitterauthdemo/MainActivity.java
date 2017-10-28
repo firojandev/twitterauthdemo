@@ -188,10 +188,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-//    public void sendDirectMsg(View view){
-//        sendMsg(341925762,"saddm_ruet","Hello, this is test msg from demo app.");
-//    }
-
     public void sendMsg(long userId,String replyName,String msg){
         TwitterSession session = TwitterCore.getInstance().getSessionManager().getActiveSession();
         MyTwitterApiClient myTwitterApiClient = new MyTwitterApiClient(session);
